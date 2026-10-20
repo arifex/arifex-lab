@@ -118,3 +118,13 @@ section { padding: clamp(28px, 5vw, 52px) 0; }
 /* footer */
 .site-footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px; color: var(--muted); font-size: .95rem; }
 .site-footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+/* research areas */
+.areas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.area { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+.area p { margin: 0 0 10px; color: var(--text); }
+.area p:last-child { margin-bottom: 0; }
+.area.lead { grid-column: 1 / -1; border-top: 4px solid var(--pos); }
+.area.lead h3 { font-family: var(--serif); font-size: 1.45rem; }
+.area:not(.lead) { border-top: 4px solid var(--neg); }
+@media (max-width: 820px) { .areas { grid-template-columns: 1fr; } }
