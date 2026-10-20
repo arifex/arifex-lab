@@ -142,3 +142,4 @@ section { padding: clamp(28px, 5vw, 52px) 0; }
 .selected a { font-weight: 500; }
 .more { margin: 14px 0 0; font-weight: 500; }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 40px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
